@@ -1,0 +1,18 @@
+10/1 Thu Proposal Submission
+10/8 Thu HW#1
+----------------------------
+
+Injection attacks
+- cmd, SQL, XSS
+
+
+CERT
+----
+
+Secure coding standard
+
+IEEE Center for Secure Design
+
+cmd injection the value of the niput is used in the constr of a cmd, e.g. passing directly to the finger prog as a param "finger " protocol status of a sys or suer
+ {print "..."}
+ ;;;

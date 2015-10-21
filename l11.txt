@@ -1,0 +1,57 @@
+10/20 No class
+10/22 midterm
+11/13~15 IS CTF
+-------------------
+
+DDoS attacks
+IP spoofing
+Amplification DRDoS
+
+TCP
+3-way handshake for connection establishment
+4-way handshake for connection termination
+
+Single message DoS attacks
+1. LAND attack: send a spoofed packet with target IP
+2. Ping-of-death: ICMP echo with illegally sized payload (> 64 kB)
+3. Tear drop: sending IP fragments
+Ethernet: 1500B
+WLAN: 2272 B
+MTU
++-----------+
+| IP | data |
++-----------+
+
+IP spoofing:
+1) sending pcakets with false source addresses
+2) exploit trust relationships
+3) confound defense
+4) amplify attacks
+
+A ---- ... ---- B
+        |      /
+        | attack
+        |/
+        C
+A -> B: SYN(ISN_A)
+B -> A: SYN(ISN_B), ACK(ISN_A+1)
+A -> B: ACK(ISN_B + 1)
+             ^---------key to exploit; prediction means C can pretend to be A.
+A -> B: data
+
+IP spoofing defense:
+* Ingress filtering: check src IP of incoming attacks
+163.152.x.x
+* Reverse Path Forwarding (RPF): lookup routing table
+* Hop Count Filtering (HCF)
+
+Initial TTL defaults:
+30 DEC, HP/UX 9x
+32 W95
+60 Mac OS, Sun OS, Solaris
+64 Free BSD, Linux, HP/UX 10, Android, OS X, Taizen
+128 WNT, XP, 7
+255 Solaris, OpenBSD
+
+TTL = 119 -> OS and distance
+init TTL = 1 (think about VM evasion)

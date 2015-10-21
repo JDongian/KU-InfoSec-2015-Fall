@@ -1,0 +1,37 @@
+9/17 (Thu) Team setup|
+10/1 (Thu) Proposal  |
+---------------------+
+
+- Fuzzing
+- compile-time BOF defenses
+ * secure code
+ * safe library
+ * stack protection (canary)
+
+Return address overwrite
+
+<unsafe function> -> <safer version>
+gets -> fgets
+sprintf -> snprintf
+strcat -> strncat
+strcpy -> strncpy
+vsprintf -> vsnprintf
+
+strlcpy, strlcat: faster and simpler than strncpy, strncat
+
+Shellcode:
+compiling the code for execve("/bin/sh") or cmd.exe or system("command")
+Transfer he calling process into a new process
+
+Fuzzing:
+- A software testing technique for finding bugs
+- For example, blackbox testing by entering random inputs
+- Originated from 1988 class project taught by Prof Barton Miller at UW-madison
+- fuzzers: Peach, Sulley, AFL, DynamoRIO
+
+How to defend against buffer overflows?
+* Find the vulnerability before the attacker
+* We can prevent code execution in the stack and the heap, but there are ways around this too
+* Canaries (a bird https://upload.wikimedia.org/wikipedia/commons/8/8e/Serinus_flaviventris_-Great_Karoo%2C_Northern_Cape%2C_South_Africa_-adult_male-8.jpg)
+  - Introduced in 1998, but now supported in GCC/VC++
+  - Compilers insert additional function entry and exit code

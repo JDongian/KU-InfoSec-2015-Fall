@@ -1,0 +1,1 @@
+Security = Confidentiality + Integrity + Availability

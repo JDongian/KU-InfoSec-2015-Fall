@@ -1,0 +1,18 @@
+Eight principles
+Collapse of perimeter security
+Project intro
+
+Isolation
+Encapsulation
+Modularity
+Layering
+Least Astonishment
+
+Economy of mechanism: KISS
+Fail-safe default: secure by default
+Complete mediation: logging
+Open design: opposite of "security by obscurity"
+Separation of privilege: checks and balances
+Least privilege: minimize privilege
+Least common mechanism: prevent single point of failure
+Psychological acceptability: usability

@@ -1,0 +1,14 @@
+Proposal PT 
+2+1 m 
+------------------------------+
+
+Environment variables 
+APT
+Malware obfuscation
+compress/encrypt/change code
+
+
+----
+
+PATH manupilation via grep, wow
+

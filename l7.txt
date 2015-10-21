@@ -1,0 +1,25 @@
+10/1 Proposal Submission       |
+10/6 Proposal presentation     |
+10/8 HW #1     5. Cryptolocker |
+-------------------------------+
+
+
+10/20 - no class
+10/22 - midterm (50 min)
+* what is X? how to defend X? how does X work? how to execute X?
+
+SQL injection - escaping
+XSS - no script
+Race condition - proper synchronization
+
+Sanitization
+1. Blacklisting: deleteing bad chars e.g. ';' '(+', ...
+2. Escaping: replace with safe '\'', ...
+3. Whileisting: only allow some chars
+
+XSS in guest books, wikis, blogs: leave comments, then viewed by others posting malicious script code can be included in comment parts.
+
+User
+----
+Check a writable file
+Do read/write

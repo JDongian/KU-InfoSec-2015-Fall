@@ -1,0 +1,30 @@
+10/8 HW #1
+10/20 No class
+10/22 Midterm
+-----------------
+
+Malware obfuscation
+- packing
+- polymorphism
+- metamorphism
+
+Worm modeling
+
+----
+
+APT: Advanced Persistent Threats
+A target attack using various intrusion technologies over an extended period
+keywords: target, various, extended period
+
+Threatens: telecommunication, finance, energy, and transport
+
+Virus:
+Executes the virus before the original program
+
+Malware obfuscation (compress, encrypt, change code)
+1) Code packing compressing exec code to:
+  - bypass AV, improve mobility, conceal purpose
+  - protect from RE, e.g., PolyPack, Themida
+2) Polymorphism: encrypting original code to avoid pattern matching with a different key
+3) Metamorphism: change code to equivalent forms by inserting, reordering, or replacing instructions.
+(non-cryptographic obfuscation)

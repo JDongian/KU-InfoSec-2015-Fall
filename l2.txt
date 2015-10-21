@@ -1,0 +1,11 @@
+Team Setup
+Attack models
+Eight principles
+
+Authenticity -- (origin) integrity
+Accountability -- tracebacks, non-repudation, logging, audit trail
+
+Security Attack categories:
+    Interruption, Interception, Modification, Fabrication
+
+Detect and dispense

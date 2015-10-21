@@ -1,0 +1,43 @@
+Sample projects
+midterm 2 - CTF
+
+Collapse of Perimeter security
+How can an attacker get into your system?
+
+Ch. 10 BOF
+
+0xffffffff +------------------+
+           |    ENV, argv     | args                                  
+           +------------------+
+          /|      stack       | int fn () {}                      
+         | +- - - - - - - - - +
+         / |                  |
+run time<  |                  |
+         \ |                  |
+         | |                  |
+         | +- - - - - - - - - +
+          \|       heap       | malloc(sizeof(long));
+           +------------------+
+          /|uninitialized data| static const int y = 10;
+         | +------------------+
+compiled < | initialized data | const char* str = "hello";
+         | +------------------+
+          \|       text       |
+           +------------------+
+           |                  |
+0x00000000 +------------------+
+
+
+P() calls Q() 
+           +------------------+
+          /|       RET        |
+         | +------------------+
+         / |       OFP        |
+     P()<  +------------------+
+         \ |      param 1     |
+         | +------------------+
+          \|      param 2     |
+           +------------------+
+
+
+
